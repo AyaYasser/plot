@@ -1,0 +1,61 @@
+URL : /plot/add
+Request:
+{
+  "name": "Cairo 2"
+}
+Response:
+{
+  "id": "824b1b92-0e44-4524-b4ab-165049c9b262",
+  "name": "Cairo 2",
+  "configurations": null
+}
+
+---------------------------------------------------------------------------
+URL : /plot/configure
+Request:
+{
+  "plotId": "824b1b92-0e44-4524-b4ab-165049c9b262", //Please make sure you use a recorded plot
+  "timeslot": 1,
+  "water": 2
+}
+Response:
+{
+  "id": "81809098-3da5-4aa8-8075-e0bc9bb74ef6",
+  "timeslot": 0,
+  "water": 2,
+  "status": "2",
+  "plotId": "824b1b92-0e44-4524-b4ab-165049c9b262"
+}
+---------------------------------------------------------------------------
+URL: /plot/list
+Response:
+[
+  {
+    "id": "824b1b92-0e44-4524-b4ab-165049c9b262",
+    "name": "Cairo 3",
+    "configurations": [
+      {
+        "id": "81809098-3da5-4aa8-8075-e0bc9bb74ef6",
+        "timeslot": 0,
+        "water": 2,
+        "status": "2",
+        "plotId": "824b1b92-0e44-4524-b4ab-165049c9b262"
+      }
+    ]
+  }
+]
+--------------------------------------------------------------------------
+URL: /plot/edit
+Request:
+{
+  
+  "id": "824b1b92-0e44-4524-b4ab-165049c9b262",
+  "name": "Cairo 3"
+}
+Response:
+{
+  "id": "824b1b92-0e44-4524-b4ab-165049c9b262",
+  "name": "Cairo 3",
+  "configurations": null
+}
+

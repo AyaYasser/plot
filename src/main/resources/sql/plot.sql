@@ -1,0 +1,14 @@
+CREATE TABLE PLOT (
+   ID varchar(255) PRIMARY KEY,
+   NAME varchar(255)
+);
+
+CREATE TABLE CONFIGURATION (
+   ID varchar(255) PRIMARY KEY,
+   TIME_SLOT int,
+   WATER int,
+   NO_RETRIES int,
+   STATUS int,
+   PLOT_ID  varchar(255),
+   FOREIGN  KEY (PLOT_ID) REFERENCES  PLOT(ID)
+);
