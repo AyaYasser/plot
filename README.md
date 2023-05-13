@@ -17,7 +17,7 @@ TODO: Guide users through getting your code up and running on their own system. 
 You need to build using maven
 
 # Assumptions
-1. User should register drone with a list of medications
+1. Please run scripts first
 
 
 
